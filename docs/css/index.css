@@ -76,6 +76,7 @@ html > body{
   transform:translate(-50% , -50%);
 }
 
+
 /* section-1 */
 .section-1 > .con{
   height:880px;
@@ -86,6 +87,31 @@ html > body{
   top:60px;
   left:60px;
 }
+
+.section-1__tablet > img{
+  animation-name: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.3),
+        0 10px 10px rgba(0,0,0,0.3);
+  border-radius:50px;
+}
+
+@keyframes infinite {
+  0% {
+    transform: translatey(0);
+  }
+
+  50% {
+    transform:translatey(1.5%); 
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
+
 
 .section-1 > .con > .logo > .txt {
   position:absolute;
@@ -128,7 +154,7 @@ html > body{
 
 .section-1 .bg-1::after {
   content:"";
-  transition:padding 1.5s;
+  transition:padding 1.8s 0.5s;
   padding:0;
   background-image: linear-gradient(135deg, #332387 0%, black 100%);
   border-radius:50%;
